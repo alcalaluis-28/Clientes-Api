@@ -48,7 +48,7 @@ namespace ClientesApi.Controllers
             {
                 return Conflict(new { mensaje = "Ya existe un producto con ese número de serie" });
             }
-            0
+            
             _context.Productos.Add(producto);
             await _context.SaveChangesAsync();
 
