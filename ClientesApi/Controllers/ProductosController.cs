@@ -1,5 +1,5 @@
 ﻿using ClientesApi.Data;
-using ClienteApi.Models;
+using ClientesApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

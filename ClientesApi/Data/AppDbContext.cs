@@ -1,9 +1,9 @@
-﻿using ClienteApi.Models; //Modelo (definición tabla)
+﻿using ClientesApi.Models;
 using Microsoft.EntityFrameworkCore; //Acceder BD
 
 namespace ClientesApi.Data
 {
-    //Herencia => subClase : superClass
+    //Herencia => subClase : superclase
     public class AppDbContext : DbContext
     {
         //Constructor (inicializar)
@@ -15,5 +15,6 @@ namespace ClientesApi.Data
         //ORM tendrá acceso al modelo cliente
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Producto> Productos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }

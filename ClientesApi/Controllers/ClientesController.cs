@@ -1,7 +1,10 @@
-﻿using ClienteApi.Models;
+﻿
 using ClientesApi.Data;
+using ClientesApi.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace ClientesApi.Controllers
 {
@@ -106,6 +109,7 @@ namespace ClientesApi.Controllers
             return NoContent();
         }
         //DELETE: api/clientes/1 -> eliminar
+        [Authorize (Roles = "Admin")]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Eliminar(int id)
         {

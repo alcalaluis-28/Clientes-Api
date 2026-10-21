@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ClienteApi.Models
+namespace ClientesApi.Models
 {
     [Table("productos")]
     public class Producto
